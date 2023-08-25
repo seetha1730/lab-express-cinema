@@ -1,0 +1,36 @@
+<header>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-7 col-md-7">
+       <h1>Ironhack Cinema</h1>
+
+    <h2>Click on the movie to check the show times!</h2>
+    </div>
+     <div class="col-lg-5 col-md-5 home-btn">
+    <a class="btn btn-primary" href="/">Home</a>
+    </div>
+
+    </div>
+    </div>
+
+</header>
+
+<div class="container movie-list">
+  <div class='row col-lg-12 col-md-12'>
+ {{#each moviesList}}
+ <div class="card  mb-4 mt-4 ms-4 mx-4 col-lg-4 col-md-4 " >
+    
+  <img class="card-img-top" src="{{image}}" alt="{{title}}">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+   
+   <a class="btn  btn-primary mt-4 btn-danger" href="/movies/{{_id}}">See more</a>
+  </div>
+</div>
+ {{/each}}
+ </div>
+ </div>
+
+
+    
